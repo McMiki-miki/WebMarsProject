@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.fade-out {
+  opacity: 0;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  transition: opacity 0.5s ease;
+  background: #000;
+  overflow: hidden;
+  user-select: none;
+    
+}
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+  z-index: 999;
+}
+
+#overlay.fade {
+  opacity: 1;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    list-style: none;
+    gap: 24px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: rgba(255, 255, 255, 0.05); /* Дуже прозора біла заливка */
+  backdrop-filter: blur(10px); /* Розмиття фону за панеллю */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 18px 24px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+    
+}
+
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+    
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #f6f0e8;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+        
+nav a:hover {
+    color: #ffb86c;
+    transform: translateY(-1px);
+}
+
+
+
+canvas {
+  display: block;
+  cursor: grab;
+}
+
+canvas.dragging {
+  cursor: grabbing;
+}
+
+#ui {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 24px;
+  font-family: 'Courier New', monospace;
+  color: #ff9966;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  pointer-events: none;
+  white-space: nowrap;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.9; }
+  50%       { opacity: 0.3; }
+}
+
+#base {
+  position: fixed;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  text-align: center;
+  overflow: visible;
+}
+
+
+#base-label {
+  margin-top: 12px;
+  font-size: 25px;
+  color: #ffb46e;
+  font-size: 28px;
+  letter-spacing: 0.25em;
+  animation: floatText 4s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 140, 60, 0.6);
+  position: fixed;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  text-align: center;
+}

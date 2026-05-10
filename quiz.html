@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+
+    <!-- Навігація -->
+<nav class="navbar">
+  <ul>
+    <li><a href="home.html">HOME</a></li>
+
+    <li><a href="mars-map.html">MARS MAP</a></li>
+
+    <li><a href="quiz.html">QUIZ</a></li>
+  </ul>
+</nav>
+
+   <header class="hero">
+    
+        <div class="hero-content">
+          <h3 class="h3"><span>Explore learn discover</span></h3>
+          
+            <h1 class="hero-title"><span>Quiz</span></h1>
+            <h2 class="h2"><span>Test your knowledge about Mars</span>
+             <span> and challenge yourself</span>
+            </h2>
+        </div>
+   </header>
+   
+   <main>
+    <h2>ARE YOU READY?</h2>
+    <h1 class="title2">Here you can enjoy our quiz</h1>
+    <div class="mini-arrow"></div>
+<div class="quiz-wrapper">
+
+  <div class="quiz-info">
+      <div class="timer">
+          ⏳ <span id="time">20</span>s
+      </div>
+      <div class="correct-counter">
+          ✔ <span id="correctCount">0</span>
+      </div>
+  </div>
+
+  <div id="start-screen">
+  
+    <button id="start-btn" class="btn">ПОЧАТИ КВІЗ</button>
+  </div>
+
+  <div id="quiz-screen" class="hidden">
+    <h2 id="question"></h2>
+    <div id="answers"></div>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <h1 class="title">Результат</h1>
+    <p id="score"></p>
+    <button id="restart-btn" class="btn">Пройти ще раз</button>
+  </div>
+
+</div>
+
+</main>
+<script src="../js/home.js"></script>
+
+</body>
+</html>

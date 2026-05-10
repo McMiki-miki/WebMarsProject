@@ -73,7 +73,7 @@ body.fade-in {
 }
 /* ТЕКСТ */
 #base-label {
-  margin-top: 12px;
+  margin-top: 4%;
   font-size: 25px;
   color: #ffb46e;
   font-size: 28px;
@@ -116,7 +116,7 @@ body.fade-in {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 1200px;
+    width: 1000px;
     background: rgba(255, 255, 255, 0.05); /* Дуже прозора біла заливка */
   backdrop-filter: blur(10px); /* Розмиття фону за панеллю */
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);

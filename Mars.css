@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
   transition: opacity 0.5s ease;
-  background: #000;
+  background: url("../img/Stars.jpg");
   overflow: hidden;
   user-select: none;
     
@@ -43,8 +43,8 @@ a {
     left: 50%;
     transform: translateX(-50%);
     width: 1200px;
-    background: rgba(255, 255, 255, 0.05); /* Дуже прозора біла заливка */
-  backdrop-filter: blur(10px); /* Розмиття фону за панеллю */
+    background: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 18px 24px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;

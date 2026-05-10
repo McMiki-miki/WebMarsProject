@@ -192,7 +192,7 @@ main {
   font-family: 'Orbitron', sans-serif;
   background: #000000f9;
   color: #e6e6e6;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -221,6 +221,7 @@ main {
     text-align: center;
     color: #e6e6e6;
     font-family: 'Orbitron', sans-serif;
+    
 }
 
 
